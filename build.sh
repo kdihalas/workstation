@@ -17,9 +17,11 @@ rpm-ostree override remove firefox firefox-langpacks
 # this installs a package from fedora repos
 rpm-ostree install tmux distrobox gnome-tweaks
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+rpm-ostree install fuse fuse-libs libglvnd-egl libglvnd-opengl libglvnd-glx harfbuzz fontconfig fribidi libthai
 rpm-ostree install zsh vim
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
 #### Example for enabling a System Unit File
+systemctl enable docker
